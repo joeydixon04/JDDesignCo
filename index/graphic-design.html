@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design - JD Design Co.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">JD Design Co.</div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="graphic-design.html">Graphic Design</a></li>
+                <li><a href="web-design.html">Web Design</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="section-content">
+            <div class="page-intro">
+                <h2>Graphic design.</h2>
+                <p>My graphic design services encompass everything from brand identity to print collateral. I create visual systems that are both beautiful and functional.</p>
+            </div>
+            
+            <div class="grid">
+                <div class="card" onclick="openGallery('poster')">
+                    <h3>Poster design</h3>
+                    <p>Bold, eye-catching posters that command attention and communicate your message instantly. From events to promotions, each design is crafted with impact and clarity in mind.</p>
+                    <span class="view-work">View Work →</span>
+                </div>
+                <div class="card" onclick="openGallery('social')">
+                    <h3>Social media</h3>
+                    <p>Scroll-stopping content designed for maximum engagement across all platforms. Consistent visual identity that builds your brand presence and connects with your audience.</p>
+                    <span class="view-work">View Work →</span>
+                </div>
+                <div class="card" onclick="openGallery('advertising')">
+                    <h3>Advertising design</h3>
+                    <p>Strategic ad campaigns that capture attention and drive results. Clean, modern designs optimized for both digital and print media to elevate your brand message.</p>
+                    <span class="view-work">View Work →</span>
+                </div>
+            </div>
+
+            <div class="portfolio-cta">
+                <a href="https://www.behance.net/joeydmedia" target="_blank" class="cta-button">View my portfolio on Behance</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Popup -->
+    <div id="galleryModal" class="gallery-modal">
+        <div class="gallery-modal-content">
+            <span class="gallery-close" onclick="closeGallery()">&times;</span>
+            <h2 id="galleryTitle" class="gallery-title"></h2>
+            <div id="galleryGrid" class="gallery-popup-grid"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>JD Design Co.</h4>
+                <p>Freelance design and development with Swiss precision and modern aesthetics.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="graphic-design.html">Graphic design</a></li>
+                    <li><a href="web-design.html">Web design</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:joeydixonbusiness@gmail.com">joeydixonbusiness@gmail.com</a></li>
+                    <li><a href="tel:+18168205638">(816) 820-5638</a></li>
+                    <li><a href="contact.html">Contact form</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 JD Design Co. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>
